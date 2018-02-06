@@ -50,7 +50,7 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
 
 8. The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this. (The year should be 2018)
 
-  INSERT INTO movies (title, year) VALUES ('Avengers: Infinity War', 2018);
+  INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
 
 9. 9. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy 2' show time from 21:40 to 23:00
 
@@ -71,3 +71,5 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
   or using Id's BETWEEN, like:
 
   DELETE FROM movies WHERE id BETWEEN 2 AND 13;
+
+  DELETE FROM movies WHERE title LIKE '%Captain%';
